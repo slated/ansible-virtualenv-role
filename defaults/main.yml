@@ -1,0 +1,14 @@
+# default virtualenv settings
+---
+
+virtualenv_workon_dir: pyves
+virtualenv_project_dir: pyves
+virtualenv_python: /usr/bin/python3
+virtualenv_version: 15.0.1
+virtualenvwrapper_version: 4.8
+virtualenvwrapper_source: /usr/local/bin/virtualenvwrapper.sh
+virtualenvwrapper_python: /usr/bin/python  # usually the default "system" python
+virtualenvwrapper_workon_home: '/home/{{ ansible_user }}/{{ virtualenv_workon_dir }}'
+virtualenvwrapper_project_home: '{{ virtualenvwrapper_workon_home }}'
+virtualenvrc: '/home/{{ ansible_user }}/.virtualenvrc'
+bashrc: '/home/{{ ansible_user }}/.bashrc'

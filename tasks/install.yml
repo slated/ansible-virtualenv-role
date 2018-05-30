@@ -1,0 +1,17 @@
+---
+
+- name: Install virtualenv
+  action:
+    module: pip
+    name: virtualenv
+    version: '{{ virtualenv_version }}'
+    state: present
+  when: virtualenv_version is defined
+
+- name: Install virtualenvwrapper
+  action:
+    module: pip
+    name: virtualenvwrapper
+    version: '{{ virtualenvwrapper_version }}'
+    state: present
+  when: virtualenvwrapper_version is defined

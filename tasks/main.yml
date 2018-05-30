@@ -1,0 +1,12 @@
+# Setup virtualenvwrapper and create a virtualenv
+---
+
+- import_tasks: install.yml
+  become: yes
+  tags: [build, virtualenv_install]
+  
+- import_tasks: configure.yml
+  tags: [build, virtualenv_configure]
+
+- import_tasks: mkvirtualenv.yml
+  tags: [build, virtualenv_mkvirtualenv]

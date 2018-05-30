@@ -1,0 +1,10 @@
+---
+# handlers for virtualenv
+
+- name: Run source virtualenvrc
+  command: source '{{ virtualenvrc }}'
+  
+- name: Upgrade pip
+  pip:
+    virtualenv: '{{ virtualenvwrapper_workon_home }}/{{ virtualenv_project }}'
+    name: pip
