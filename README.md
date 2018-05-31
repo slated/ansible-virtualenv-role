@@ -34,7 +34,7 @@ Create a project with mkvirtualenv using `virtualenv_python` if
 Dependencies
 ------------
 
-    rm-software.s-python
+    rm-software.python
 
 Example Playbook
 ----------------
