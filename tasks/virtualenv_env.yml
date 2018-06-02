@@ -1,0 +1,11 @@
+---
+
+- name: Export essential virtual env settings
+  set_fact:
+    virtualenv_env:
+      python: '{{ virtualenv_python }}'
+      project: '{{ virtualenv_project }}'
+      workon: 'source {{ virtualenvrc }} && workon {{ virtualenv_project }}'
+      virtualenv_path: '{{ virtualenvwrapper_workon_home }}/{{ virtualenv_project }}'
+      project_path: '{{ virtualenvwrapper_project_home }}/{{ virtualenv_project }}'
+
