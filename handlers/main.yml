@@ -1,0 +1,12 @@
+---
+# handlers for virtualenv
+
+- name: Run source virtualenvrc
+  shell: source '{{ virtualenvrc }}'
+  args:
+    executable: /bin/bash
+
+- name: Upgrade pip
+  pip:
+    virtualenv: '{{ virtualenvwrapper_workon_home }}/{{ virtualenv_project }}'
+    name: pip

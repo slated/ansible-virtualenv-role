@@ -1,0 +1,12 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    ansible_user: root
+    virtualenvwrapper_workon_home: '/{{ ansible_user }}/{{ virtualenv_workon_dir }}'
+    virtualenvrc: '/{{ ansible_user }}/.virtualenvrc'
+    bashrc: '/{{ ansible_user }}/.bashrc'
+    virtualenv_project: myproject
+  roles:
+    - role: python
+    - role: ansible-virtualenv-roles

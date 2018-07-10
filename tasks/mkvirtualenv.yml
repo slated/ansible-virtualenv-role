@@ -1,0 +1,11 @@
+# mkvirtualenv if virtualenv_project is set
+---
+
+- name: Make virtualenv
+  shell: 'source {{ virtualenvrc }} && mkvirtualenv --python={{ virtualenv_python }} {{ virtualenv_project }}'
+  args:
+    executable: /bin/bash
+    creates: '{{ virtualenvwrapper_workon_home }}/{{ virtualenv_project }}'
+  when: virtualenv_project is defined
+  notify:
+    - Upgrade pip

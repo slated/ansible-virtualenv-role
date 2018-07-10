@@ -1,0 +1,17 @@
+---
+
+- name: Configure .virtualenvrc
+  template:
+    src: virtualenvrc.j2
+    dest: '{{ virtualenvrc }}'
+  notify: Run source virtualenvrc
+
+- name: Add source virtualenvrc in bashrc
+  action:
+    module: lineinfile
+    dest: '{{ bashrc }}'
+    regexp: 'source {{ virtualenvrc }}'
+    line: 'source {{ virtualenvrc }}'
+    state: present
+    backup: yes
+    create: yes
