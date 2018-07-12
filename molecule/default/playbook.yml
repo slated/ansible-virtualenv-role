@@ -9,4 +9,4 @@
     virtualenv_project: myproject
   roles:
     - role: python
-    - role: ansible-virtualenv-roles
+    - role: ansible-virtualenv-role
