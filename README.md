@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/slated/ansible-virtualenv-roles.svg?branch=master)](https://travis-ci.org/slated/ansible-virtualenv-roles)
+[![Build Status](https://travis-ci.org/slated/ansible-virtualenv-role.svg?branch=master)](https://travis-ci.org/slated/ansible-virtualenv-role)
 
 Role Name
 =========
