@@ -8,4 +8,4 @@
       workon: 'source {{ virtualenvrc }} && workon {{ virtualenv_project }}'
       virtualenv_path: '{{ virtualenvwrapper_workon_home }}/{{ virtualenv_project }}'
       project_path: '{{ virtualenvwrapper_project_home }}/{{ virtualenv_project }}'
-
+  when: virtualenv_project is defined
