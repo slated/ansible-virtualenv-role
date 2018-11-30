@@ -32,7 +32,7 @@ Create a project with mkvirtualenv using `virtualenv_python` if
 (and only if) `virtualenv_project` var is set.
 
     virtualenv_project: myproject
-    
+
 Dependencies
 ------------
 
@@ -47,4 +47,3 @@ Example Playbook
         vars:
           virtualenv_python: /usr/bin/python3.6
           virtualenv_project: myproject
-        

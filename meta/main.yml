@@ -13,4 +13,4 @@ galaxy_info:
     - virtualenvwrapper
     - django
 
-dependencies:
+dependencies: []
