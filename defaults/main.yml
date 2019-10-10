@@ -4,8 +4,8 @@
 virtualenv_workon_dir: pyves
 virtualenv_project_dir: pyves
 virtualenv_python: /usr/bin/python3
-virtualenv_version: 15.0.1
-virtualenvwrapper_version: 4.8
+virtualenv_version: 16.7.5
+virtualenvwrapper_version: 4.8.4
 virtualenvwrapper_source: /usr/local/bin/virtualenvwrapper.sh
 virtualenvwrapper_python: /usr/bin/python  # usually the default "system" python
 virtualenvwrapper_workon_home: '/home/{{ ansible_user }}/{{ virtualenv_workon_dir }}'
